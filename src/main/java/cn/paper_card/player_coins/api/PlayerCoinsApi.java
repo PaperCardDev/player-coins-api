@@ -36,4 +36,6 @@ public interface PlayerCoinsApi {
     long transferCoins(@NotNull UUID fromId, @NotNull UUID toId, long coins, @NotNull String comment) throws Exception;
 
     @NotNull ChangeRecordService getChangeRecordService();
+
+    @NotNull String getCoinsName();
 }
